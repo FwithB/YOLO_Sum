@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python文件搜索助手</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .input-group {
+            margin-bottom: 20px;
+        }
+        input, button {
+            padding: 10px;
+            font-size: 16px;
+        }
+        input {
+            width: 70%;
+        }
+        button {
+            width: 25%;
+            cursor: pointer;
+        }
+        .results {
+            margin-top: 20px;
+        }
+        .file-item {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .file-path {
+            color: #666;
+            font-size: 14px;
+        }
+        .preview {
+            background-color: #f9f9f9;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <h1>Python文件搜索助手</h1>
+    
+    <div class="input-group">
+        <input type="text" id="directory" placeholder="输入要搜索的目录路径" value="C:/Users/Documents">
+    </div>
+    
+    <div class="input-group">
+        <input type="text" id="instruction" placeholder="请输入搜索指令，例如：找出所有Python文件">
+        <button onclick="searchFiles()">搜索</button>
+    </div>
+    
+    <div id="loading" style="display: none;">正在搜索中，请稍候...</div>
+    
+    <div id="results" class="results"></div>
+    
+    <script>
+        async function searchFiles() {
+            const instruction = document.getElementById('instruction').value;
+            const directory = document.getElementById('directory').value;
+            
+            if (!instruction) {
+                alert('请输入搜索指令');
+                return;
+            }
+            
+            document.getElementById('loading').style.display = 'block';
+            document.getElementById('results').innerHTML = '';
+            
+            try {
+                const response = await fetch('http://localhost:5000/search', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        instruction,
+                        directory
+                    })
+                });
+                
+                const data = await response.json();
+                displayResults(data.results);
+            } catch (error) {
+                console.error('Error:', error);
+                document.getElementById('results').innerHTML = `<p>搜索出错: ${error.message}</p>`;
+            } finally {
+                document.getElementById('loading').style.display = 'none';
+            }
+        }
+        
+        function displayResults(results) {
+        const resultsDiv = document.getElementById('results');
+        // 清除"正在搜索中"的提示
+        document.getElementById('loading').style.display = 'none';
+        
+        // 检查是否返回了错误信息
+        if (results.error) {
+            resultsDiv.innerHTML = `<p class="error" style="color:red">${results.error}</p>`;
+            return;
+        }
+        
+        resultsDiv.innerHTML = `<h2>找到 ${results.length} 个Python文件:</h2>`;
+        
+        results.forEach(file => {
+            const fileItem = document.createElement('div');
+            fileItem.className = 'file-item';
+            
+            let content = `
+                <h3>${file.file_name}</h3>
+                <div class="file-path">${file.path}</div>
+            `;
+            
+            if (file.size !== undefined) {
+                content += `<div>大小: ${formatFileSize(file.size)}</div>`;
+            }
+            
+            if (file.modified) {
+                content += `<div>修改时间: ${file.modified}</div>`;
+            }
+            
+            if (file.preview) {
+                content += `<div class="preview">${file.preview}</div>`;
+            }
+            
+            fileItem.innerHTML = content;
+            resultsDiv.appendChild(fileItem);
+        });
+        }
+
+        
+        function formatFileSize(bytes) {
+            if (bytes < 1024) return bytes + ' bytes';
+            if (bytes < 1024 * 1024) return (bytes / 1024).toFixed(2) + ' KB';
+            return (bytes / (1024 * 1024)).toFixed(2) + ' MB';
+        }
+    </script>
+</body>
+</html>
