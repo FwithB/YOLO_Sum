@@ -1,0 +1,537 @@
+2025-04-08 14:43:11,710 - INFO - Starting MCP server on port 5000
+2025-04-08 14:43:12,816 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-04-08 14:43:12,816 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-08 14:44:31,733 - INFO - 127.0.0.1 - - [08/Apr/2025 14:44:31] "GET /health HTTP/1.1" 200 -
+2025-04-08 14:45:45,506 - INFO - Received browser request: {"action": "open_cvat"}
+2025-04-08 14:45:46,261 - INFO - Browser initialized: chromium, headless=False
+2025-04-08 14:45:47,683 - INFO - Navigated to: http://localhost:8080/
+2025-04-08 14:45:52,688 - ERROR - Failed to login to CVAT: Page.wait_for_selector: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator("input[name=\"username\"]") to be visible
+
+2025-04-08 14:45:52,689 - INFO - Browser control result: {"status": "error", "message": "\u767b\u5f55CVAT\u5931\u8d25: Page.wait_for_selector: Timeout 5000ms exceeded.\nCall log:\n  - waiting for locator(\"input[name=\\\"username\\\"]\") to be visible\n"}
+2025-04-08 14:45:52,691 - INFO - 127.0.0.1 - - [08/Apr/2025 14:45:52] "POST /browser HTTP/1.1" 200 -
+2025-04-08 14:48:24,745 - INFO - Received browser request: {"action": "open_cvat"}
+2025-04-08 14:48:24,745 - INFO - Browser already initialized
+2025-04-08 14:49:01,810 - INFO - Received browser request: {"action": "open_cvat"}
+2025-04-08 14:49:01,810 - INFO - Browser already initialized
+2025-04-08 14:54:37,415 - INFO - 127.0.0.1 - - [08/Apr/2025 14:54:37] "GET /health HTTP/1.1" 200 -
+2025-04-08 14:57:26,519 - INFO - 127.0.0.1 - - [08/Apr/2025 14:57:26] "GET /health HTTP/1.1" 200 -
+2025-04-08 14:59:09,163 - INFO - 127.0.0.1 - - [08/Apr/2025 14:59:09] "GET /health HTTP/1.1" 200 -
+2025-04-08 16:35:54,027 - INFO - Starting MCP server on port 5000
+2025-04-08 16:35:54,947 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-04-08 16:35:54,947 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-08 16:36:23,406 - INFO - 127.0.0.1 - - [08/Apr/2025 16:36:23] "GET /health HTTP/1.1" 200 -
+2025-04-08 16:45:06,754 - INFO - Starting MCP server on port 5000
+2025-04-08 16:45:07,601 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-04-08 16:45:07,601 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-08 16:45:18,668 - INFO - 127.0.0.1 - - [08/Apr/2025 16:45:18] "GET /health HTTP/1.1" 200 -
+2025-04-08 19:11:58,811 - INFO - Starting MCP server on port 5000
+2025-04-08 19:11:59,668 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-04-08 19:11:59,668 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-08 19:12:31,012 - INFO - 127.0.0.1 - - [08/Apr/2025 19:12:31] "GET /health HTTP/1.1" 200 -
+2025-04-08 20:14:06,520 - INFO - 127.0.0.1 - - [08/Apr/2025 20:14:06] "GET /health HTTP/1.1" 200 -
+2025-04-08 20:14:06,825 - INFO - 127.0.0.1 - - [08/Apr/2025 20:14:06] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-08 20:14:19,352 - INFO - 127.0.0.1 - - [08/Apr/2025 20:14:19] "GET /health HTTP/1.1" 200 -
+2025-04-08 20:14:52,660 - INFO - Received browser request: {"action": "open_cvat"}
+2025-04-08 20:14:53,486 - INFO - Browser initialized: chromium, headless=False
+2025-04-08 20:14:54,839 - INFO - Navigated to: http://localhost:8080/
+2025-04-08 20:14:59,853 - ERROR - Failed to login to CVAT: Page.wait_for_selector: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator("input[name=\"username\"]") to be visible
+
+2025-04-08 20:14:59,853 - INFO - Browser control result: {"status": "error", "message": "\u767b\u5f55CVAT\u5931\u8d25: Page.wait_for_selector: Timeout 5000ms exceeded.\nCall log:\n  - waiting for locator(\"input[name=\\\"username\\\"]\") to be visible\n"}
+2025-04-08 20:14:59,853 - INFO - 127.0.0.1 - - [08/Apr/2025 20:14:59] "POST /browser HTTP/1.1" 200 -
+2025-04-08 20:20:23,766 - INFO - 127.0.0.1 - - [08/Apr/2025 20:20:23] "GET /health HTTP/1.1" 200 -
+2025-04-08 20:20:50,830 - INFO - Received browser request: {"action": "open_browser"}
+2025-04-08 20:20:50,832 - ERROR - Unknown action: open_browser
+2025-04-08 20:20:50,833 - INFO - Browser control result: {"status": "error", "message": "\u672a\u77e5\u64cd\u4f5c: open_browser"}
+2025-04-08 20:20:50,833 - INFO - 127.0.0.1 - - [08/Apr/2025 20:20:50] "POST /browser HTTP/1.1" 200 -
+2025-04-08 20:22:04,746 - INFO - Received browser request: {"action": "open_cvat"}
+2025-04-08 20:22:04,750 - INFO - Browser already initialized
+2025-04-08 20:22:41,794 - INFO - Received browser request: {"action": "open_cvat"}
+2025-04-08 20:22:41,797 - INFO - Browser already initialized
+2025-04-08 20:28:20,735 - INFO - Starting MCP server on port 5000
+2025-04-08 20:28:21,685 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-04-08 20:28:21,685 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-08 20:28:37,748 - INFO - 127.0.0.1 - - [08/Apr/2025 20:28:37] "GET /health HTTP/1.1" 200 -
+2025-04-08 20:29:03,904 - INFO - Received browser request: {"action": "open_cvat"}
+2025-04-08 20:29:04,402 - INFO - Browser initialized: chromium, headless=False
+2025-04-08 20:29:05,750 - INFO - Navigated to: http://localhost:8080/
+2025-04-08 20:29:10,757 - ERROR - Failed to login to CVAT: Page.wait_for_selector: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator("input[name=\"username\"]") to be visible
+
+2025-04-08 20:29:10,757 - INFO - Browser control result: {"status": "error", "message": "\u767b\u5f55CVAT\u5931\u8d25: Page.wait_for_selector: Timeout 5000ms exceeded.\nCall log:\n  - waiting for locator(\"input[name=\\\"username\\\"]\") to be visible\n"}
+2025-04-08 20:29:10,757 - INFO - 127.0.0.1 - - [08/Apr/2025 20:29:10] "POST /browser HTTP/1.1" 200 -
+2025-04-08 20:29:54,310 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-2' coro=<Connection.run() running at C:\Users\JACKSON\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_connection.py:281> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2025-04-08 20:30:02,366 - INFO - Starting MCP server on port 5000
+2025-04-08 20:30:03,187 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-04-08 20:30:03,187 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-08 20:30:16,292 - INFO - 127.0.0.1 - - [08/Apr/2025 20:30:16] "GET /health HTTP/1.1" 200 -
+2025-04-08 20:30:25,258 - INFO - Received browser request: {"action": "open_cvat"}
+2025-04-08 20:30:25,729 - INFO - Browser initialized: chromium, headless=False
+2025-04-08 20:30:27,088 - INFO - Navigated to: http://localhost:8080/
+2025-04-08 20:30:32,093 - ERROR - Failed to login to CVAT: Page.wait_for_selector: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator("input[name=\"username\"]") to be visible
+
+2025-04-08 20:30:32,094 - INFO - Browser control result: {"status": "error", "message": "\u767b\u5f55CVAT\u5931\u8d25: Page.wait_for_selector: Timeout 5000ms exceeded.\nCall log:\n  - waiting for locator(\"input[name=\\\"username\\\"]\") to be visible\n"}
+2025-04-08 20:30:32,095 - INFO - 127.0.0.1 - - [08/Apr/2025 20:30:32] "POST /browser HTTP/1.1" 200 -
+2025-04-08 20:32:42,332 - INFO - Starting MCP server on port 5000
+2025-04-08 20:32:43,183 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-04-08 20:32:43,184 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-08 20:32:53,077 - INFO - 127.0.0.1 - - [08/Apr/2025 20:32:53] "GET /health HTTP/1.1" 200 -
+2025-04-08 20:33:04,030 - INFO - Received browser request: {"action": "open_cvat"}
+2025-04-08 20:33:04,524 - INFO - Browser initialized: chromium, headless=False
+2025-04-08 20:33:05,892 - INFO - Navigated to: http://localhost:8080/
+2025-04-08 20:33:25,911 - ERROR - Failed to login to CVAT: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+  - waiting for locator("input[placeholder=\"Email or username\"]") to be visible
+
+2025-04-08 20:33:25,911 - INFO - Browser control result: {"status": "error", "message": "\u767b\u5f55CVAT\u5931\u8d25: Page.wait_for_selector: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator(\"input[placeholder=\\\"Email or username\\\"]\") to be visible\n"}
+2025-04-08 20:33:25,913 - INFO - 127.0.0.1 - - [08/Apr/2025 20:33:25] "POST /browser HTTP/1.1" 200 -
+2025-04-08 20:37:19,871 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-2' coro=<Connection.run() running at C:\Users\JACKSON\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_connection.py:281> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2025-04-08 20:37:25,181 - INFO - Starting MCP server on port 5000
+2025-04-08 20:37:26,018 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-04-08 20:37:26,018 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-08 20:37:36,138 - INFO - 127.0.0.1 - - [08/Apr/2025 20:37:36] "GET /health HTTP/1.1" 200 -
+2025-04-08 20:37:48,603 - INFO - Received browser request: {"action": "open_cvat"}
+2025-04-08 20:37:49,103 - INFO - Browser initialized: chromium, headless=False
+2025-04-08 20:37:50,464 - INFO - Navigated to: http://localhost:8080/
+2025-04-08 20:38:10,471 - ERROR - Failed to login to CVAT: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+  - waiting for locator("input[placeholder=\"Email or username\"]") to be visible
+
+2025-04-08 20:38:10,472 - INFO - Browser control result: {"status": "error", "message": "\u767b\u5f55CVAT\u5931\u8d25: Page.wait_for_selector: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator(\"input[placeholder=\\\"Email or username\\\"]\") to be visible\n"}
+2025-04-08 20:38:10,473 - INFO - 127.0.0.1 - - [08/Apr/2025 20:38:10] "POST /browser HTTP/1.1" 200 -
+2025-04-08 20:42:15,403 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-2' coro=<Connection.run() running at C:\Users\JACKSON\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_connection.py:281> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2025-04-08 20:42:21,832 - INFO - Starting MCP server on port 5000
+2025-04-08 20:42:22,693 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-04-08 20:42:22,694 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-08 20:42:28,720 - INFO - 127.0.0.1 - - [08/Apr/2025 20:42:28] "GET /health HTTP/1.1" 200 -
+2025-04-08 20:42:48,441 - INFO - Received browser request: {"action": "open_cvat"}
+2025-04-08 20:42:48,937 - INFO - Browser initialized: chromium, headless=False
+2025-04-08 20:42:50,323 - INFO - Navigated to: http://localhost:8080/
+2025-04-08 20:42:50,536 - INFO - ÒÑ±£´æµÇÂ¼Ò³ÃæHTMLºÍ½ØÍ¼
+2025-04-08 20:42:50,779 - INFO - ³¢ÊÔÍ¨¹ý¼üÅÌ½»»¥µÇÂ¼
+2025-04-08 20:42:55,787 - INFO - Browser control result: {"status": "success", "message": "\u5c1d\u8bd5\u767b\u5f55CVAT\uff0c\u8bf7\u68c0\u67e5\u662f\u5426\u6210\u529f"}
+2025-04-08 20:42:55,788 - INFO - 127.0.0.1 - - [08/Apr/2025 20:42:55] "POST /browser HTTP/1.1" 200 -
+2025-04-08 20:45:42,586 - INFO - 127.0.0.1 - - [08/Apr/2025 20:45:42] "GET /health HTTP/1.1" 200 -
+2025-04-08 20:46:05,021 - INFO - Received browser request: {"action": "login_cvat", "username": "admin", "password": "admin"}
+2025-04-08 20:46:51,343 - INFO - 127.0.0.1 - - [08/Apr/2025 20:46:51] "GET /health HTTP/1.1" 200 -
+2025-04-08 20:47:22,318 - INFO - Received browser request: {"action": "create_project", "name": "ccc"}
+2025-04-08 20:47:59,401 - INFO - Received browser request: {"action": "create_project", "name": "ccc"}
+2025-04-08 20:48:36,455 - INFO - Received browser request: {"action": "create_project", "name": "ccc"}
+2025-04-09 09:27:00,456 - INFO - Starting MCP server on port 5000
+2025-04-09 09:27:00,475 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-04-09 09:27:00,475 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-09 09:27:07,094 - INFO - 127.0.0.1 - - [09/Apr/2025 09:27:07] "GET /health HTTP/1.1" 200 -
+2025-04-09 09:27:54,560 - INFO - Received browser request: {"action": "open_cvat"}
+2025-04-09 09:27:57,983 - INFO - Browser initialized: chromium, headless=False
+2025-04-09 09:28:00,364 - ERROR - Failed to navigate to http://localhost:8080: Page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:8080/
+Call log:
+  - navigating to "http://localhost:8080/", waiting until "load"
+
+2025-04-09 09:28:00,366 - INFO - Browser control result: {"status": "error", "message": "\u5bfc\u822a\u5230 http://localhost:8080 \u5931\u8d25: Page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:8080/\nCall log:\n  - navigating to \"http://localhost:8080/\", waiting until \"load\"\n"}
+2025-04-09 09:28:00,369 - INFO - 127.0.0.1 - - [09/Apr/2025 09:28:00] "POST /browser HTTP/1.1" 200 -
+2025-04-09 09:35:03,394 - INFO - 127.0.0.1 - - [09/Apr/2025 09:35:03] "GET /health HTTP/1.1" 200 -
+2025-04-09 09:35:30,019 - INFO - Received browser request: {"action": "open_cvat"}
+2025-04-09 09:35:30,020 - INFO - Browser already initialized
+2025-04-09 09:36:07,064 - INFO - Received browser request: {"action": "open_cvat"}
+2025-04-09 09:36:07,065 - INFO - Browser already initialized
+2025-04-09 09:36:42,744 - INFO - 127.0.0.1 - - [09/Apr/2025 09:36:42] "GET /health HTTP/1.1" 200 -
+2025-04-09 09:37:03,105 - INFO - Received browser request: {"action": "open_cvat"}
+2025-04-09 09:37:03,105 - INFO - Browser already initialized
+2025-04-09 09:37:43,050 - INFO - Starting MCP server on port 5000
+2025-04-09 09:37:44,222 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-04-09 09:37:44,222 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-09 09:37:56,997 - INFO - 127.0.0.1 - - [09/Apr/2025 09:37:56] "GET /health HTTP/1.1" 200 -
+2025-04-09 09:38:30,463 - INFO - Received browser request: {"action": "open_cvat"}
+2025-04-09 09:38:30,968 - INFO - Browser initialized: chromium, headless=False
+2025-04-09 09:38:30,987 - INFO - Navigated to: http://localhost:8080/
+2025-04-09 09:38:30,987 - ERROR - Failed to login to CVAT: 'BrowserController' object has no attribute '_debug_mode'
+2025-04-09 09:38:30,988 - INFO - Browser control result: {"status": "error", "message": "\u767b\u5f55CVAT\u5931\u8d25: 'BrowserController' object has no attribute '_debug_mode'"}
+2025-04-09 09:38:30,988 - INFO - 127.0.0.1 - - [09/Apr/2025 09:38:30] "POST /browser HTTP/1.1" 200 -
+2025-04-09 09:40:09,159 - INFO - 127.0.0.1 - - [09/Apr/2025 09:40:09] "GET /health HTTP/1.1" 200 -
+2025-04-09 09:40:18,902 - INFO - Received browser request: {"action": "open_cvat"}
+2025-04-09 09:40:18,905 - INFO - Browser already initialized
+2025-04-09 09:40:55,032 - INFO - 127.0.0.1 - - [09/Apr/2025 09:40:55] "GET /health HTTP/1.1" 200 -
+2025-04-09 09:41:09,095 - INFO - Starting MCP server on port 5000
+2025-04-09 09:41:09,939 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-04-09 09:41:09,939 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-09 09:41:17,690 - INFO - 127.0.0.1 - - [09/Apr/2025 09:41:17] "GET /health HTTP/1.1" 200 -
+2025-04-09 09:41:28,601 - INFO - Received browser request: {"action": "open_cvat"}
+2025-04-09 09:41:29,111 - INFO - Browser initialized: chromium, headless=False
+2025-04-09 09:41:30,468 - INFO - Navigated to: http://localhost:8080/
+2025-04-09 09:41:30,468 - ERROR - Failed to login to CVAT: 'BrowserController' object has no attribute '_debug_mode'
+2025-04-09 09:41:30,469 - INFO - Browser control result: {"status": "error", "message": "\u767b\u5f55CVAT\u5931\u8d25: 'BrowserController' object has no attribute '_debug_mode'"}
+2025-04-09 09:41:30,469 - INFO - 127.0.0.1 - - [09/Apr/2025 09:41:30] "POST /browser HTTP/1.1" 200 -
+2025-04-09 09:44:06,401 - INFO - Received browser request: {"action": "open_cvat"}
+2025-04-09 09:44:06,401 - INFO - Browser already initialized
+2025-04-09 09:44:43,449 - INFO - Received browser request: {"action": "open_cvat"}
+2025-04-09 09:44:43,451 - INFO - Browser already initialized
+2025-04-09 09:45:20,499 - INFO - Received browser request: {"action": "open_cvat"}
+2025-04-09 09:45:20,501 - INFO - Browser already initialized
+2025-04-09 09:52:35,501 - INFO - 127.0.0.1 - - [09/Apr/2025 09:52:35] "GET /health HTTP/1.1" 200 -
+2025-04-09 09:52:49,766 - INFO - Received browser request: {"action": "open_cvat"}
+2025-04-09 09:52:49,766 - INFO - Browser already initialized
+2025-04-09 10:04:54,860 - INFO - Starting MCP server on port 5000
+2025-04-09 10:04:55,707 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-04-09 10:04:55,707 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-09 10:05:14,985 - INFO - 127.0.0.1 - - [09/Apr/2025 10:05:14] "GET /health HTTP/1.1" 200 -
+2025-04-09 10:05:34,856 - INFO - Received browser request: {"action": "open_cvat"}
+2025-04-09 10:05:34,856 - INFO - ´¦Àíä¯ÀÀÆ÷ÇëÇó [Ïß³ÌID: 16056]
+2025-04-09 10:05:34,856 - INFO - ÇëÇóÊý¾Ý: {"action": "open_cvat"}
+2025-04-09 10:05:34,856 - INFO - ´´½¨ÐÂÊÂ¼þÑ­»·
+2025-04-09 10:05:34,856 - INFO - ¿ªÊ¼Ö´ÐÐÒì²½ÇëÇó...
+2025-04-09 10:05:34,856 - INFO - ¿ªÊ¼³õÊ¼»¯ chromium ä¯ÀÀÆ÷, headless=False
+2025-04-09 10:05:35,172 - INFO - ÕýÔÚÆô¶¯ä¯ÀÀÆ÷...
+2025-04-09 10:05:35,286 - INFO - chromium ä¯ÀÀÆ÷Æô¶¯Íê³É
+2025-04-09 10:05:35,290 - INFO - ´´½¨ä¯ÀÀÆ÷ÉÏÏÂÎÄ...
+2025-04-09 10:05:35,305 - INFO - ´´½¨ÐÂÒ³Ãæ...
+2025-04-09 10:05:35,393 - INFO - Ò³Ãæ´´½¨³É¹¦²¢¿ÉÕý³£·ÃÎÊ
+2025-04-09 10:05:35,405 - INFO - ä¯ÀÀÆ÷ÏÔÊ¾²âÊÔÒ³Ãæ
+2025-04-09 10:05:37,706 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: The shortcut: h of SWITCH_HIDDEN have conflicts with these shortcuts: HIDE_MASK_SINGLE_SHAPE
+2025-04-09 10:05:37,772 - INFO - Navigated to: http://localhost:8080/
+2025-04-09 10:05:37,772 - INFO - ÑéÖ¤ä¯ÀÀÆ÷ÊÇ·ñÏìÓ¦...
+2025-04-09 10:05:37,773 - INFO - ä¯ÀÀÆ÷Õý³£ÏìÓ¦£¬µ±Ç°URL: http://localhost:8080/
+2025-04-09 10:05:37,773 - INFO - ×¼±¸µ¼º½µ½CVATµÇÂ¼Ò³Ãæ
+2025-04-09 10:05:37,773 - INFO - ±£´æµÇÂ¼Ç°½ØÍ¼µ½ cvat_login_before.png
+2025-04-09 10:05:37,852 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: Failed to load resource: the server responded with a status of 404 (Not Found)
+2025-04-09 10:05:37,857 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: Failed to load resource: the server responded with a status of 401 (Unauthorized)
+2025-04-09 10:05:37,904 - INFO - ¼ì²éÊÇ·ñÒÑ¾­µÇÂ¼...
+2025-04-09 10:05:37,918 - INFO - ³¢ÊÔµÇÂ¼·½·¨1: Ê¹ÓÃÑ¡ÔñÆ÷
+2025-04-09 10:05:37,922 - WARNING - Î´ÕÒµ½ÓÃ»§ÃûÊäÈë¿ò£¬¿ÉÄÜÒ³Ãæ½á¹¹²»·ûºÏÔ¤ÆÚ
+2025-04-09 10:05:37,925 - INFO - ³¢ÊÔµÇÂ¼·½·¨2: ¼üÅÌ½»»¥
+2025-04-09 10:05:37,954 - INFO - ÒÑ±£´æµÇÂ¼Ò³ÃæHTML
+2025-04-09 10:05:37,995 - INFO - ÒÑµã»÷Ò³ÃæÖ÷ÌåÈ·±£»ñµÃ½¹µã
+2025-04-09 10:05:39,547 - INFO - ÒÑÊ¹ÓÃ¼üÅÌÊäÈëÓÃ»§Ãû: admin
+2025-04-09 10:05:41,097 - INFO - ÒÑÊ¹ÓÃ¼üÅÌÊäÈëÃÜÂë
+2025-04-09 10:05:41,657 - INFO - ÒÑ°´ÏÂEnter¼üÌá½»µÇÂ¼
+2025-04-09 10:05:41,657 - INFO - µÈ´ýµÇÂ¼´¦Àí...
+2025-04-09 10:05:46,827 - INFO - ÒÑ±£´æµÇÂ¼ºó½ØÍ¼
+2025-04-09 10:05:46,831 - WARNING - ËùÓÐµÇÂ¼³¢ÊÔ¾ùÎ´³É¹¦
+2025-04-09 10:05:46,831 - INFO - Òì²½ÇëÇóÖ´ÐÐÍê³É: {"status": "warning", "message": "µÇÂ¼CVAT³¢ÊÔÎ´³É¹¦£¬Çë²é¿´ä¯ÀÀÆ÷×´Ì¬"}
+2025-04-09 10:05:46,831 - INFO - Browser control result: {"status": "warning", "message": "\u767b\u5f55CVAT\u5c1d\u8bd5\u672a\u6210\u529f\uff0c\u8bf7\u67e5\u770b\u6d4f\u89c8\u5668\u72b6\u6001"}
+2025-04-09 10:05:46,831 - INFO - 127.0.0.1 - - [09/Apr/2025 10:05:46] "POST /browser HTTP/1.1" 200 -
+2025-04-09 10:10:54,912 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-2' coro=<Connection.run() running at C:\Users\JACKSON\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_connection.py:281> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2025-04-09 10:10:58,530 - INFO - Starting MCP server on port 5000
+2025-04-09 10:10:59,387 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-04-09 10:10:59,387 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-09 10:11:04,638 - INFO - 127.0.0.1 - - [09/Apr/2025 10:11:04] "GET /health HTTP/1.1" 200 -
+2025-04-09 10:11:21,969 - INFO - Received browser request: {"action": "open_cvat", "browser_type": "msedge"}
+2025-04-09 10:11:21,969 - INFO - ´¦Àíä¯ÀÀÆ÷ÇëÇó [Ïß³ÌID: 17312]
+2025-04-09 10:11:21,969 - INFO - ÇëÇóÊý¾Ý: {"action": "open_cvat", "browser_type": "msedge"}
+2025-04-09 10:11:21,969 - INFO - ´´½¨ÐÂÊÂ¼þÑ­»·
+2025-04-09 10:11:21,969 - INFO - ¿ªÊ¼Ö´ÐÐÒì²½ÇëÇó...
+2025-04-09 10:11:21,969 - INFO - ¿ªÊ¼³õÊ¼»¯ msedge ä¯ÀÀÆ÷, headless=False
+2025-04-09 10:11:22,273 - INFO - ÕýÔÚÆô¶¯ä¯ÀÀÆ÷...
+2025-04-09 10:11:22,408 - INFO - msedge ä¯ÀÀÆ÷Æô¶¯Íê³É
+2025-04-09 10:11:22,408 - INFO - ´´½¨ä¯ÀÀÆ÷ÉÏÏÂÎÄ...
+2025-04-09 10:11:22,424 - INFO - ´´½¨ÐÂÒ³Ãæ...
+2025-04-09 10:11:22,524 - INFO - Ò³Ãæ´´½¨³É¹¦²¢¿ÉÕý³£·ÃÎÊ
+2025-04-09 10:11:22,540 - INFO - ä¯ÀÀÆ÷ÏÔÊ¾²âÊÔÒ³Ãæ
+2025-04-09 10:11:24,880 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: -ms-high-contrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode standard.
+2025-04-09 10:11:24,881 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: -ms-high-contrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode standard.
+2025-04-09 10:11:24,918 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: The shortcut: h of SWITCH_HIDDEN have conflicts with these shortcuts: HIDE_MASK_SINGLE_SHAPE
+2025-04-09 10:11:24,986 - INFO - Navigated to: http://localhost:8080/
+2025-04-09 10:11:24,986 - INFO - ÑéÖ¤ä¯ÀÀÆ÷ÊÇ·ñÏìÓ¦...
+2025-04-09 10:11:24,987 - INFO - ä¯ÀÀÆ÷Õý³£ÏìÓ¦£¬µ±Ç°URL: http://localhost:8080/
+2025-04-09 10:11:24,987 - INFO - ×¼±¸µ¼º½µ½CVATµÇÂ¼Ò³Ãæ
+2025-04-09 10:11:24,987 - INFO - ±£´æµÇÂ¼Ç°½ØÍ¼µ½ cvat_login_before.png
+2025-04-09 10:11:25,044 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: Failed to load resource: the server responded with a status of 404 (Not Found)
+2025-04-09 10:11:25,061 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: Failed to load resource: the server responded with a status of 401 (Unauthorized)
+2025-04-09 10:11:25,116 - INFO - ¼ì²éÊÇ·ñÒÑ¾­µÇÂ¼...
+2025-04-09 10:11:25,134 - INFO - ³¢ÊÔµÇÂ¼·½·¨1: Ê¹ÓÃÑ¡ÔñÆ÷
+2025-04-09 10:11:25,138 - WARNING - Î´ÕÒµ½ÓÃ»§ÃûÊäÈë¿ò£¬¿ÉÄÜÒ³Ãæ½á¹¹²»·ûºÏÔ¤ÆÚ
+2025-04-09 10:11:25,141 - INFO - ³¢ÊÔµÇÂ¼·½·¨2: ¼üÅÌ½»»¥
+2025-04-09 10:11:25,160 - INFO - ÒÑ±£´æµÇÂ¼Ò³ÃæHTML
+2025-04-09 10:11:25,207 - INFO - ÒÑµã»÷Ò³ÃæÖ÷ÌåÈ·±£»ñµÃ½¹µã
+2025-04-09 10:11:25,387 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: -ms-high-contrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode standard.
+2025-04-09 10:11:25,387 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: -ms-high-contrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode standard.
+2025-04-09 10:11:26,783 - INFO - ÒÑÊ¹ÓÃ¼üÅÌÊäÈëÓÃ»§Ãû: admin
+2025-04-09 10:11:28,379 - INFO - ÒÑÊ¹ÓÃ¼üÅÌÊäÈëÃÜÂë
+2025-04-09 10:11:28,959 - INFO - ÒÑ°´ÏÂEnter¼üÌá½»µÇÂ¼
+2025-04-09 10:11:28,960 - INFO - µÈ´ýµÇÂ¼´¦Àí...
+2025-04-09 10:11:34,411 - INFO - ÒÑ±£´æµÇÂ¼ºó½ØÍ¼
+2025-04-09 10:11:34,416 - WARNING - ËùÓÐµÇÂ¼³¢ÊÔ¾ùÎ´³É¹¦
+2025-04-09 10:11:34,416 - INFO - Òì²½ÇëÇóÖ´ÐÐÍê³É: {"status": "warning", "message": "µÇÂ¼CVAT³¢ÊÔÎ´³É¹¦£¬Çë²é¿´ä¯ÀÀÆ÷×´Ì¬"}
+2025-04-09 10:11:34,416 - INFO - Browser control result: {"status": "warning", "message": "\u767b\u5f55CVAT\u5c1d\u8bd5\u672a\u6210\u529f\uff0c\u8bf7\u67e5\u770b\u6d4f\u89c8\u5668\u72b6\u6001"}
+2025-04-09 10:11:34,417 - INFO - 127.0.0.1 - - [09/Apr/2025 10:11:34] "POST /browser HTTP/1.1" 200 -
+2025-04-09 10:14:56,332 - INFO - 127.0.0.1 - - [09/Apr/2025 10:14:56] "GET /health HTTP/1.1" 200 -
+2025-04-09 10:15:11,737 - INFO - Received browser request: {"action": "open_cvat", "browser_type": "msedge"}
+2025-04-09 10:15:11,737 - INFO - ´¦Àíä¯ÀÀÆ÷ÇëÇó [Ïß³ÌID: 26076]
+2025-04-09 10:15:11,737 - INFO - ÇëÇóÊý¾Ý: {"action": "open_cvat", "browser_type": "msedge"}
+2025-04-09 10:15:11,737 - INFO - ´´½¨ÐÂÊÂ¼þÑ­»·
+2025-04-09 10:15:11,737 - INFO - ¿ªÊ¼Ö´ÐÐÒì²½ÇëÇó...
+2025-04-09 10:15:11,737 - INFO - ¼ì²éä¯ÀÀÆ÷ÊµÀýÊÇ·ñ¿ÉÓÃ...
+2025-04-09 10:15:11,737 - INFO - ä¯ÀÀÆ÷ÊµÀý×´Ì¬Õý³££¬µ±Ç°URL: http://localhost:8080/auth/password/reset
+2025-04-09 10:15:48,825 - INFO - Received browser request: {"action": "open_cvat", "browser_type": "msedge"}
+2025-04-09 10:15:48,825 - INFO - ´¦Àíä¯ÀÀÆ÷ÇëÇó [Ïß³ÌID: 5656]
+2025-04-09 10:15:48,825 - INFO - ÇëÇóÊý¾Ý: {"action": "open_cvat", "browser_type": "msedge"}
+2025-04-09 10:15:48,825 - INFO - ´´½¨ÐÂÊÂ¼þÑ­»·
+2025-04-09 10:15:48,825 - INFO - ¿ªÊ¼Ö´ÐÐÒì²½ÇëÇó...
+2025-04-09 10:15:48,825 - INFO - ¼ì²éä¯ÀÀÆ÷ÊµÀýÊÇ·ñ¿ÉÓÃ...
+2025-04-09 10:15:48,825 - INFO - ä¯ÀÀÆ÷ÊµÀý×´Ì¬Õý³££¬µ±Ç°URL: http://localhost:8080/auth/password/reset
+2025-04-09 10:16:25,901 - INFO - Received browser request: {"action": "open_cvat", "browser_type": "msedge"}
+2025-04-09 10:16:25,901 - INFO - ´¦Àíä¯ÀÀÆ÷ÇëÇó [Ïß³ÌID: 22532]
+2025-04-09 10:16:25,905 - INFO - ÇëÇóÊý¾Ý: {"action": "open_cvat", "browser_type": "msedge"}
+2025-04-09 10:16:25,906 - INFO - ´´½¨ÐÂÊÂ¼þÑ­»·
+2025-04-09 10:16:25,907 - INFO - ¿ªÊ¼Ö´ÐÐÒì²½ÇëÇó...
+2025-04-09 10:16:25,908 - INFO - ¼ì²éä¯ÀÀÆ÷ÊµÀýÊÇ·ñ¿ÉÓÃ...
+2025-04-09 10:16:25,908 - INFO - ä¯ÀÀÆ÷ÊµÀý×´Ì¬Õý³££¬µ±Ç°URL: http://localhost:8080/auth/password/reset
+2025-04-09 10:18:45,345 - INFO - Starting MCP server on port 5000
+2025-04-09 10:18:46,188 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-04-09 10:18:46,188 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-09 10:18:51,642 - INFO - 127.0.0.1 - - [09/Apr/2025 10:18:51] "GET /health HTTP/1.1" 200 -
+2025-04-09 10:19:01,700 - INFO - Received browser request: {"action": "open_cvat", "browser_type": "msedge"}
+2025-04-09 10:19:01,700 - INFO - ´¦Àíä¯ÀÀÆ÷ÇëÇó [Ïß³ÌID: 25024]
+2025-04-09 10:19:01,700 - INFO - ÇëÇóÊý¾Ý: {"action": "open_cvat", "browser_type": "msedge"}
+2025-04-09 10:19:01,700 - INFO - ´´½¨ÐÂÊÂ¼þÑ­»·
+2025-04-09 10:19:01,700 - INFO - ¿ªÊ¼Ö´ÐÐÒì²½ÇëÇó...
+2025-04-09 10:19:01,700 - INFO - ¿ªÊ¼³õÊ¼»¯ msedge ä¯ÀÀÆ÷, headless=False
+2025-04-09 10:19:01,985 - INFO - ÕýÔÚÆô¶¯ä¯ÀÀÆ÷...
+2025-04-09 10:19:02,135 - INFO - msedge ä¯ÀÀÆ÷Æô¶¯Íê³É
+2025-04-09 10:19:02,136 - INFO - ´´½¨ä¯ÀÀÆ÷ÉÏÏÂÎÄ...
+2025-04-09 10:19:02,144 - INFO - ´´½¨ÐÂÒ³Ãæ...
+2025-04-09 10:19:02,266 - INFO - Ò³Ãæ´´½¨³É¹¦²¢¿ÉÕý³£·ÃÎÊ
+2025-04-09 10:19:02,282 - INFO - ä¯ÀÀÆ÷ÏÔÊ¾²âÊÔÒ³Ãæ
+2025-04-09 10:19:04,623 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: -ms-high-contrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode standard.
+2025-04-09 10:19:04,624 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: -ms-high-contrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode standard.
+2025-04-09 10:19:04,659 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: The shortcut: h of SWITCH_HIDDEN have conflicts with these shortcuts: HIDE_MASK_SINGLE_SHAPE
+2025-04-09 10:19:04,721 - INFO - Navigated to: http://localhost:8080/
+2025-04-09 10:19:04,903 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: -ms-high-contrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode standard.
+2025-04-09 10:19:04,904 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: -ms-high-contrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode standard.
+2025-04-09 10:19:04,916 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: The shortcut: h of SWITCH_HIDDEN have conflicts with these shortcuts: HIDE_MASK_SINGLE_SHAPE
+2025-04-09 10:19:05,020 - INFO - Navigated to: http://localhost:8080/
+2025-04-09 10:19:05,074 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: Failed to load resource: the server responded with a status of 401 (Unauthorized)
+2025-04-09 10:19:05,082 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: Failed to load resource: the server responded with a status of 404 (Not Found)
+2025-04-09 10:19:05,365 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: -ms-high-contrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode standard.
+2025-04-09 10:19:05,366 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: -ms-high-contrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode standard.
+2025-04-09 10:19:08,215 - INFO - Ê¹ÓÃTab¼üµ¼º½ºÍ¼üÅÌ½»»¥³¢ÊÔµÇÂ¼
+2025-04-09 10:19:09,189 - INFO - ÊäÈëÓÃ»§Ãû: admin
+2025-04-09 10:19:09,543 - INFO - ÊäÈëÃÜÂë: Yyh277132984
+2025-04-09 10:19:09,883 - INFO - °´ÏÂEnter¼üÌá½»µÇÂ¼
+2025-04-09 10:19:09,896 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: Failed to load resource: the server responded with a status of 400 (Bad Request)
+2025-04-09 10:19:09,902 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: Must include either "username" or "email" and "password".
+2025-04-09 10:19:15,042 - INFO - Òì²½ÇëÇóÖ´ÐÐÍê³É: {"status": "success", "message": "³¢ÊÔÍ¨¹ý¼üÅÌ½»»¥µÇÂ¼CVAT£¬Çë¼ì²éä¯ÀÀÆ÷"}
+2025-04-09 10:19:15,042 - INFO - Browser control result: {"status": "success", "message": "\u5c1d\u8bd5\u901a\u8fc7\u952e\u76d8\u4ea4\u4e92\u767b\u5f55CVAT\uff0c\u8bf7\u68c0\u67e5\u6d4f\u89c8\u5668"}
+2025-04-09 10:19:15,044 - INFO - 127.0.0.1 - - [09/Apr/2025 10:19:15] "POST /browser HTTP/1.1" 200 -
+2025-04-09 10:25:12,038 - INFO - Starting MCP server on port 5000
+2025-04-09 10:25:12,902 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-04-09 10:25:12,902 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-09 10:25:23,628 - INFO - 127.0.0.1 - - [09/Apr/2025 10:25:23] "GET /health HTTP/1.1" 200 -
+2025-04-09 10:25:33,939 - INFO - Received browser request: {"action": "open_cvat", "browser_type": "msedge"}
+2025-04-09 10:25:33,939 - INFO - ´¦Àíä¯ÀÀÆ÷ÇëÇó [Ïß³ÌID: 15652]
+2025-04-09 10:25:33,939 - INFO - ÇëÇóÊý¾Ý: {"action": "open_cvat", "browser_type": "msedge"}
+2025-04-09 10:25:33,939 - INFO - ´´½¨ÐÂÊÂ¼þÑ­»·
+2025-04-09 10:25:33,939 - INFO - ¿ªÊ¼Ö´ÐÐÒì²½ÇëÇó...
+2025-04-09 10:25:33,939 - INFO - ¿ªÊ¼³õÊ¼»¯ msedge ä¯ÀÀÆ÷, headless=False
+2025-04-09 10:25:34,223 - INFO - ÕýÔÚÆô¶¯ä¯ÀÀÆ÷...
+2025-04-09 10:25:34,356 - INFO - msedge ä¯ÀÀÆ÷Æô¶¯Íê³É
+2025-04-09 10:25:34,356 - INFO - ´´½¨ä¯ÀÀÆ÷ÉÏÏÂÎÄ...
+2025-04-09 10:25:34,372 - INFO - ´´½¨ÐÂÒ³Ãæ...
+2025-04-09 10:25:34,499 - INFO - Ò³Ãæ´´½¨³É¹¦²¢¿ÉÕý³£·ÃÎÊ
+2025-04-09 10:25:34,507 - INFO - ä¯ÀÀÆ÷ÏÔÊ¾²âÊÔÒ³Ãæ
+2025-04-09 10:25:36,809 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: -ms-high-contrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode standard.
+2025-04-09 10:25:36,810 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: -ms-high-contrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode standard.
+2025-04-09 10:25:36,843 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: The shortcut: h of SWITCH_HIDDEN have conflicts with these shortcuts: HIDE_MASK_SINGLE_SHAPE
+2025-04-09 10:25:36,907 - INFO - Navigated to: http://localhost:8080/
+2025-04-09 10:25:37,090 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: -ms-high-contrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode standard.
+2025-04-09 10:25:37,091 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: -ms-high-contrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode standard.
+2025-04-09 10:25:37,103 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: The shortcut: h of SWITCH_HIDDEN have conflicts with these shortcuts: HIDE_MASK_SINGLE_SHAPE
+2025-04-09 10:25:37,203 - INFO - Navigated to: http://localhost:8080/auth/login
+2025-04-09 10:25:37,260 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: Failed to load resource: the server responded with a status of 401 (Unauthorized)
+2025-04-09 10:25:37,261 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: Failed to load resource: the server responded with a status of 404 (Not Found)
+2025-04-09 10:25:37,460 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: -ms-high-contrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode standard.
+2025-04-09 10:25:37,460 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: -ms-high-contrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode standard.
+2025-04-09 10:25:39,401 - INFO - µÚÒ»²½£ºÊäÈëÓÃ»§Ãû
+2025-04-09 10:25:39,416 - ERROR - Î´ÕÒµ½ÓÃ»§ÃûÊäÈë¿ò
+2025-04-09 10:25:39,416 - INFO - ³¢ÊÔ¼üÅÌ½»»¥·½Ê½µÇÂ¼
+2025-04-09 10:25:46,647 - INFO - Òì²½ÇëÇóÖ´ÐÐÍê³É: {"status": "warning", "message": "³¢ÊÔÍ¨¹ý¼üÅÌ½»»¥µÇÂ¼CVAT£¬Çë¼ì²éä¯ÀÀÆ÷"}
+2025-04-09 10:25:46,650 - INFO - Browser control result: {"status": "warning", "message": "\u5c1d\u8bd5\u901a\u8fc7\u952e\u76d8\u4ea4\u4e92\u767b\u5f55CVAT\uff0c\u8bf7\u68c0\u67e5\u6d4f\u89c8\u5668"}
+2025-04-09 10:25:46,652 - INFO - 127.0.0.1 - - [09/Apr/2025 10:25:46] "POST /browser HTTP/1.1" 200 -
+2025-04-09 10:28:15,896 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-2' coro=<Connection.run() running at C:\Users\JACKSON\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_connection.py:281> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2025-04-09 10:28:24,328 - INFO - Starting MCP server on port 5000
+2025-04-09 10:28:25,179 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-04-09 10:28:25,179 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-09 10:28:35,676 - INFO - 127.0.0.1 - - [09/Apr/2025 10:28:35] "GET /health HTTP/1.1" 200 -
+2025-04-09 10:28:46,911 - INFO - Received browser request: {"action": "open_cvat", "browser_type": "msedge"}
+2025-04-09 10:28:46,911 - INFO - ´¦Àíä¯ÀÀÆ÷ÇëÇó [Ïß³ÌID: 22312]
+2025-04-09 10:28:46,911 - INFO - ÇëÇóÊý¾Ý: {"action": "open_cvat", "browser_type": "msedge"}
+2025-04-09 10:28:46,911 - INFO - ´´½¨ÐÂÊÂ¼þÑ­»·
+2025-04-09 10:28:46,911 - INFO - ¿ªÊ¼Ö´ÐÐÒì²½ÇëÇó...
+2025-04-09 10:28:46,911 - INFO - ¿ªÊ¼³õÊ¼»¯ msedge ä¯ÀÀÆ÷, headless=False
+2025-04-09 10:28:47,204 - INFO - ÕýÔÚÆô¶¯ä¯ÀÀÆ÷...
+2025-04-09 10:28:47,349 - INFO - msedge ä¯ÀÀÆ÷Æô¶¯Íê³É
+2025-04-09 10:28:47,349 - INFO - ´´½¨ä¯ÀÀÆ÷ÉÏÏÂÎÄ...
+2025-04-09 10:28:47,366 - INFO - ´´½¨ÐÂÒ³Ãæ...
+2025-04-09 10:28:47,467 - INFO - Ò³Ãæ´´½¨³É¹¦²¢¿ÉÕý³£·ÃÎÊ
+2025-04-09 10:28:47,483 - INFO - ä¯ÀÀÆ÷ÏÔÊ¾²âÊÔÒ³Ãæ
+2025-04-09 10:28:49,801 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: -ms-high-contrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode standard.
+2025-04-09 10:28:49,802 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: -ms-high-contrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode standard.
+2025-04-09 10:28:49,834 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: The shortcut: h of SWITCH_HIDDEN have conflicts with these shortcuts: HIDE_MASK_SINGLE_SHAPE
+2025-04-09 10:28:49,899 - INFO - Navigated to: http://localhost:8080/
+2025-04-09 10:28:50,088 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: -ms-high-contrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode standard.
+2025-04-09 10:28:50,089 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: -ms-high-contrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode standard.
+2025-04-09 10:28:50,101 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: The shortcut: h of SWITCH_HIDDEN have conflicts with these shortcuts: HIDE_MASK_SINGLE_SHAPE
+2025-04-09 10:28:50,209 - INFO - Navigated to: http://localhost:8080/auth/login
+2025-04-09 10:28:50,262 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: Failed to load resource: the server responded with a status of 404 (Not Found)
+2025-04-09 10:28:50,355 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: Failed to load resource: the server responded with a status of 401 (Unauthorized)
+2025-04-09 10:28:50,476 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: -ms-high-contrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode standard.
+2025-04-09 10:28:50,477 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: -ms-high-contrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode standard.
+2025-04-09 10:28:53,217 - INFO - µÚÒ»²½£ºÊäÈëÓÃ»§Ãû
+2025-04-09 10:28:53,230 - WARNING - Î´ÕÒµ½ÓÃ»§ÃûÊäÈë¿ò£¬³¢ÊÔ¸üÍ¨ÓÃµÄÑ¡ÔñÆ÷
+2025-04-09 10:28:53,323 - INFO - ÒÑÊäÈëÓÃ»§Ãû: admin
+2025-04-09 10:28:53,345 - INFO - ÒÑ°´Enter¼üÌá½»ÓÃ»§Ãû
+2025-04-09 10:28:55,504 - INFO - µÚ¶þ²½£ºÑ°ÕÒ²¢ÊäÈëÃÜÂë¿ò
+2025-04-09 10:28:55,510 - INFO - ÕÒµ½ÃÜÂëÊäÈë¿ò
+2025-04-09 10:28:56,675 - INFO - ÒÑÊäÈëÃÜÂë
+2025-04-09 10:28:56,888 - INFO - ÒÑµã»÷Next°´Å¥
+2025-04-09 10:29:02,022 - INFO - Òì²½ÇëÇóÖ´ÐÐÍê³É: {"status": "success", "message": "³É¹¦µÇÂ¼CVAT"}
+2025-04-09 10:29:02,023 - INFO - Browser control result: {"status": "success", "message": "\u6210\u529f\u767b\u5f55CVAT"}
+2025-04-09 10:29:02,024 - INFO - 127.0.0.1 - - [09/Apr/2025 10:29:02] "POST /browser HTTP/1.1" 200 -
+2025-04-09 10:33:49,478 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-2' coro=<Connection.run() running at C:\Users\JACKSON\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_connection.py:281> wait_for=<Future pending cb=[Task.task_wakeup()]> cb=[ProtocolCallback.__init__.<locals>.cb() at C:\Users\JACKSON\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_connection.py:198, ProtocolCallback.__init__.<locals>.cb() at C:\Users\JACKSON\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_connection.py:198]>
+2025-04-09 10:33:53,182 - INFO - Starting MCP server on port 5000
+2025-04-09 10:33:54,024 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-04-09 10:33:54,024 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-09 10:33:59,562 - INFO - 127.0.0.1 - - [09/Apr/2025 10:33:59] "GET /health HTTP/1.1" 200 -
+2025-04-09 10:35:56,476 - INFO - Starting MCP server on port 5000
+2025-04-09 10:35:57,321 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-04-09 10:35:57,321 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-09 10:36:04,179 - INFO - 127.0.0.1 - - [09/Apr/2025 10:36:04] "GET /health HTTP/1.1" 200 -
+2025-04-09 10:36:14,337 - INFO - Received browser request: {"action": "open_cvat", "browser_type": "chromium"}
+2025-04-09 10:36:14,338 - INFO - ´¦Àíä¯ÀÀÆ÷ÇëÇó [Ïß³ÌID: 1476]
+2025-04-09 10:36:14,340 - INFO - ÇëÇóÊý¾Ý: {"action": "open_cvat", "browser_type": "chromium"}
+2025-04-09 10:36:14,341 - INFO - ´´½¨ÐÂÊÂ¼þÑ­»·
+2025-04-09 10:36:14,342 - INFO - ¿ªÊ¼Ö´ÐÐÒì²½ÇëÇó...
+2025-04-09 10:36:14,343 - INFO - ¿ªÊ¼³õÊ¼»¯ msedge ä¯ÀÀÆ÷, headless=False
+2025-04-09 10:36:14,615 - INFO - ÕýÔÚÆô¶¯ä¯ÀÀÆ÷...
+2025-04-09 10:36:14,757 - INFO - msedge ä¯ÀÀÆ÷Æô¶¯Íê³É
+2025-04-09 10:36:14,757 - INFO - ´´½¨ä¯ÀÀÆ÷ÉÏÏÂÎÄ...
+2025-04-09 10:36:14,768 - INFO - ´´½¨ÐÂÒ³Ãæ...
+2025-04-09 10:36:14,862 - INFO - Ò³Ãæ´´½¨³É¹¦²¢¿ÉÕý³£·ÃÎÊ
+2025-04-09 10:36:14,891 - INFO - ä¯ÀÀÆ÷ÏÔÊ¾²âÊÔÒ³Ãæ
+2025-04-09 10:36:17,235 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: -ms-high-contrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode standard.
+2025-04-09 10:36:17,236 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: -ms-high-contrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode standard.
+2025-04-09 10:36:17,268 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: The shortcut: h of SWITCH_HIDDEN have conflicts with these shortcuts: HIDE_MASK_SINGLE_SHAPE
+2025-04-09 10:36:17,334 - INFO - Navigated to: http://localhost:8080/
+2025-04-09 10:36:17,521 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: -ms-high-contrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode standard.
+2025-04-09 10:36:17,522 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: -ms-high-contrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode standard.
+2025-04-09 10:36:17,534 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: The shortcut: h of SWITCH_HIDDEN have conflicts with these shortcuts: HIDE_MASK_SINGLE_SHAPE
+2025-04-09 10:36:17,640 - INFO - Navigated to: http://localhost:8080/auth/login
+2025-04-09 10:36:17,690 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: Failed to load resource: the server responded with a status of 404 (Not Found)
+2025-04-09 10:36:17,690 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: Failed to load resource: the server responded with a status of 401 (Unauthorized)
+2025-04-09 10:36:17,890 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: -ms-high-contrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode standard.
+2025-04-09 10:36:17,890 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: -ms-high-contrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode standard.
+2025-04-09 10:36:20,478 - INFO - µÚÒ»²½£ºÊäÈëÓÃ»§Ãû
+2025-04-09 10:36:20,580 - INFO - ÒÑÊäÈëÓÃ»§Ãû: admin
+2025-04-09 10:36:20,596 - INFO - ÒÑ°´Enter¼üÌá½»ÓÃ»§Ãû
+2025-04-09 10:36:22,609 - INFO - µÚ¶þ²½£ºÑ°ÕÒ²¢ÊäÈëÃÜÂë¿ò
+2025-04-09 10:36:22,611 - INFO - ÕÒµ½ÃÜÂëÊäÈë¿ò
+2025-04-09 10:36:22,769 - INFO - ÒÑÊäÈëÃÜÂë
+2025-04-09 10:36:22,825 - INFO - ÒÑµã»÷Next°´Å¥
+2025-04-09 10:36:27,838 - INFO - Òì²½ÇëÇóÖ´ÐÐÍê³É: {"status": "success", "message": "³É¹¦µÇÂ¼CVAT"}
+2025-04-09 10:36:27,838 - INFO - Browser control result: {"status": "success", "message": "\u6210\u529f\u767b\u5f55CVAT"}
+2025-04-09 10:36:27,838 - INFO - 127.0.0.1 - - [09/Apr/2025 10:36:27] "POST /browser HTTP/1.1" 200 -
+2025-04-09 10:38:14,545 - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-2' coro=<Connection.run() running at C:\Users\JACKSON\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_connection.py:281> wait_for=<Future pending cb=[Task.task_wakeup()]> cb=[ProtocolCallback.__init__.<locals>.cb() at C:\Users\JACKSON\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_connection.py:198, ProtocolCallback.__init__.<locals>.cb() at C:\Users\JACKSON\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\_impl\_connection.py:198]>
+2025-04-09 10:38:21,064 - INFO - Starting MCP server on port 5000
+2025-04-09 10:38:21,980 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2025-04-09 10:38:21,980 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-09 10:38:27,509 - INFO - 127.0.0.1 - - [09/Apr/2025 10:38:27] "GET /health HTTP/1.1" 200 -
+2025-04-09 10:38:38,328 - INFO - Received browser request: {"action": "open_cvat", "browser_type": "chromium"}
+2025-04-09 10:38:38,328 - INFO - ´¦Àíä¯ÀÀÆ÷ÇëÇó [Ïß³ÌID: 8004]
+2025-04-09 10:38:38,328 - INFO - ÇëÇóÊý¾Ý: {"action": "open_cvat", "browser_type": "chromium"}
+2025-04-09 10:38:38,328 - INFO - ´´½¨ÐÂÊÂ¼þÑ­»·
+2025-04-09 10:38:38,344 - INFO - ¿ªÊ¼Ö´ÐÐÒì²½ÇëÇó...
+2025-04-09 10:38:38,344 - INFO - ¿ªÊ¼³õÊ¼»¯ chromium ä¯ÀÀÆ÷, headless=False
+2025-04-09 10:38:38,619 - INFO - ÕýÔÚÆô¶¯ä¯ÀÀÆ÷...
+2025-04-09 10:38:38,774 - INFO - chromium ä¯ÀÀÆ÷Æô¶¯Íê³É
+2025-04-09 10:38:38,774 - INFO - ´´½¨ä¯ÀÀÆ÷ÉÏÏÂÎÄ...
+2025-04-09 10:38:38,789 - INFO - ´´½¨ÐÂÒ³Ãæ...
+2025-04-09 10:38:38,867 - INFO - Ò³Ãæ´´½¨³É¹¦²¢¿ÉÕý³£·ÃÎÊ
+2025-04-09 10:38:38,881 - INFO - ä¯ÀÀÆ÷ÏÔÊ¾²âÊÔÒ³Ãæ
+2025-04-09 10:38:41,192 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: The shortcut: h of SWITCH_HIDDEN have conflicts with these shortcuts: HIDE_MASK_SINGLE_SHAPE
+2025-04-09 10:38:41,274 - INFO - Navigated to: http://localhost:8080/
+2025-04-09 10:38:41,480 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: The shortcut: h of SWITCH_HIDDEN have conflicts with these shortcuts: HIDE_MASK_SINGLE_SHAPE
+2025-04-09 10:38:41,585 - INFO - Navigated to: http://localhost:8080/auth/login
+2025-04-09 10:38:41,644 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: Failed to load resource: the server responded with a status of 404 (Not Found)
+2025-04-09 10:38:41,644 - INFO - ä¯ÀÀÆ÷¿ØÖÆÌ¨: Failed to load resource: the server responded with a status of 401 (Unauthorized)
+2025-04-09 10:38:44,525 - INFO - µÚÒ»²½£ºÊäÈëÓÃ»§Ãû
+2025-04-09 10:38:44,614 - INFO - ÒÑÊäÈëÓÃ»§Ãû: admin
+2025-04-09 10:38:44,628 - INFO - ÒÑ°´Enter¼üÌá½»ÓÃ»§Ãû
+2025-04-09 10:38:46,630 - INFO - µÚ¶þ²½£ºÑ°ÕÒ²¢ÊäÈëÃÜÂë¿ò
+2025-04-09 10:38:46,643 - INFO - ÕÒµ½ÃÜÂëÊäÈë¿ò
+2025-04-09 10:38:46,776 - INFO - ÒÑÊäÈëÃÜÂë
+2025-04-09 10:38:46,824 - INFO - ÒÑµã»÷Next°´Å¥
+2025-04-09 10:38:51,842 - INFO - Òì²½ÇëÇóÖ´ÐÐÍê³É: {"status": "success", "message": "³É¹¦µÇÂ¼CVAT"}
+2025-04-09 10:38:51,842 - INFO - Browser control result: {"status": "success", "message": "\u6210\u529f\u767b\u5f55CVAT"}
+2025-04-09 10:38:51,842 - INFO - 127.0.0.1 - - [09/Apr/2025 10:38:51] "POST /browser HTTP/1.1" 200 -

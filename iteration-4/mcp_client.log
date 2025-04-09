@@ -1,0 +1,450 @@
+2025-04-02 21:12:23,136 - INFO - 发送指令到LLM进行解析: '训练一个yolov8n模型识别猫狗，训练1轮'
+2025-04-02 21:12:23,702 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-04-02 21:12:23,704 - ERROR - 解析指令时出现异常: Error code: 401 - {'error': {'message': 'No auth credentials found', 'code': 401}}
+Traceback (most recent call last):
+  File "C:\Users\JACKSON\Desktop\YOLO\agent_training_mcp\main.py", line 84, in parse_instruction_with_llm
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JACKSON\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\_utils\_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JACKSON\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\resources\chat\completions\completions.py", line 914, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\JACKSON\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JACKSON\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\_base_client.py", line 919, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\JACKSON\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\_base_client.py", line 1023, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'No auth credentials found', 'code': 401}}
+2025-04-02 21:12:27,356 - INFO - 准备向服务器 http://localhost:5000/train 发送训练请求: {'model_type': 'yolov8n', 'epochs': 1, 'data': 'coco128.yaml'}
+2025-04-02 21:12:27,357 - INFO - 发送请求 (尝试 1/3)...
+2025-04-02 21:13:49,724 - INFO - 请求成功，服务器返回结果
+2025-04-08 14:44:31,733 - INFO - 服务器连接测试成功: http://localhost:5000
+2025-04-08 14:44:57,044 - INFO - 发送指令到LLM进行解析: '打开浏览器，并进入CVAT'
+2025-04-08 14:44:57,276 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-04-08 14:44:57,276 - ERROR - 解析指令时出现异常: Error code: 401 - {'error': {'message': 'No auth credentials found', 'code': 401}}
+Traceback (most recent call last):
+  File "C:\Users\JACKSON\Desktop\YOLO\agent_training_mcp_browser\main.py", line 128, in parse_instruction_with_llm
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JACKSON\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\_utils\_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JACKSON\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\resources\chat\completions\completions.py", line 914, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\JACKSON\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JACKSON\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\_base_client.py", line 919, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\JACKSON\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\_base_client.py", line 1023, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'No auth credentials found', 'code': 401}}
+2025-04-08 14:45:43,433 - INFO - 准备向服务器 http://localhost:5000/browser 发送浏览器控制请求: {'action': 'open_cvat'}
+2025-04-08 14:45:43,433 - INFO - 发送请求 (尝试 1/3)...
+2025-04-08 14:45:52,692 - INFO - 请求成功，服务器返回结果
+2025-04-08 14:48:22,675 - INFO - 准备向服务器 http://localhost:5000/browser 发送浏览器控制请求: {'action': 'open_cvat'}
+2025-04-08 14:48:22,675 - INFO - 发送请求 (尝试 1/3)...
+2025-04-08 14:48:54,760 - WARNING - 请求超时，将在5秒后重试...
+2025-04-08 14:48:59,764 - INFO - 发送请求 (尝试 2/3)...
+2025-04-08 14:49:31,812 - WARNING - 请求超时，将在5秒后重试...
+2025-04-08 14:49:36,813 - INFO - 发送请求 (尝试 3/3)...
+2025-04-08 14:49:38,839 - INFO - 程序被用户中断(KeyboardInterrupt)
+2025-04-08 14:54:37,415 - INFO - 服务器连接测试成功: http://localhost:5000
+2025-04-08 14:54:59,783 - INFO - 发送指令到LLM进行解析: '打开浏览器，并进入CVAT'
+2025-04-08 14:55:00,310 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-04-08 14:55:00,310 - ERROR - 解析指令时出现异常: Error code: 400 - {'error': {'message': 'openrouter/anthropic/claude-3-haiku-20240307 is not a valid model ID', 'code': 400}, 'user_id': 'user_2vB2APXlOBAVkXSOzJkERdBW4i5'}
+Traceback (most recent call last):
+  File "C:\Users\JACKSON\Desktop\YOLO\agent_training_mcp_browser\main.py", line 128, in parse_instruction_with_llm
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JACKSON\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\_utils\_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JACKSON\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\resources\chat\completions\completions.py", line 914, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\JACKSON\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JACKSON\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\_base_client.py", line 919, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\JACKSON\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\_base_client.py", line 1023, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': 'openrouter/anthropic/claude-3-haiku-20240307 is not a valid model ID', 'code': 400}, 'user_id': 'user_2vB2APXlOBAVkXSOzJkERdBW4i5'}
+2025-04-08 14:57:21,549 - INFO - 用户选择退出程序
+2025-04-08 14:57:26,519 - INFO - 服务器连接测试成功: http://localhost:5000
+2025-04-08 14:57:31,164 - INFO - 发送指令到LLM进行解析: '打开浏览器，并进入CVAT'
+2025-04-08 14:57:31,797 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-04-08 14:57:31,797 - ERROR - 解析指令时出现异常: Error code: 404 - {'error': {'message': 'No endpoints found that support tool use. To learn more about provider routing, visit: https://openrouter.ai/docs/provider-routing', 'code': 404}}
+Traceback (most recent call last):
+  File "C:\Users\JACKSON\Desktop\YOLO\agent_training_mcp_browser\main.py", line 128, in parse_instruction_with_llm
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JACKSON\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\_utils\_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JACKSON\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\resources\chat\completions\completions.py", line 914, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\JACKSON\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JACKSON\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\_base_client.py", line 919, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\JACKSON\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\_base_client.py", line 1023, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.NotFoundError: Error code: 404 - {'error': {'message': 'No endpoints found that support tool use. To learn more about provider routing, visit: https://openrouter.ai/docs/provider-routing', 'code': 404}}
+2025-04-08 14:58:27,089 - INFO - 发送指令到LLM进行解析: 'hello'
+2025-04-08 14:58:27,263 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-04-08 14:58:27,263 - ERROR - 解析指令时出现异常: Error code: 404 - {'error': {'message': 'No endpoints found that support tool use. To learn more about provider routing, visit: https://openrouter.ai/docs/provider-routing', 'code': 404}}
+Traceback (most recent call last):
+  File "C:\Users\JACKSON\Desktop\YOLO\agent_training_mcp_browser\main.py", line 128, in parse_instruction_with_llm
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JACKSON\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\_utils\_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JACKSON\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\resources\chat\completions\completions.py", line 914, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\JACKSON\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JACKSON\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\_base_client.py", line 919, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\JACKSON\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\_base_client.py", line 1023, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.NotFoundError: Error code: 404 - {'error': {'message': 'No endpoints found that support tool use. To learn more about provider routing, visit: https://openrouter.ai/docs/provider-routing', 'code': 404}}
+2025-04-08 14:59:04,540 - INFO - 用户选择退出程序
+2025-04-08 14:59:09,164 - INFO - 服务器连接测试成功: http://localhost:5000
+2025-04-08 14:59:38,934 - INFO - 发送指令到LLM进行解析: '打开浏览器，并进入CVAT'
+2025-04-08 14:59:39,152 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-04-08 14:59:39,152 - ERROR - 解析指令时出现异常: Error code: 404 - {'error': {'message': 'No endpoints found that support tool use. To learn more about provider routing, visit: https://openrouter.ai/docs/provider-routing', 'code': 404}}
+Traceback (most recent call last):
+  File "C:\Users\JACKSON\Desktop\YOLO\agent_training_mcp_browser\main.py", line 128, in parse_instruction_with_llm
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JACKSON\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\_utils\_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JACKSON\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\resources\chat\completions\completions.py", line 914, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\JACKSON\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JACKSON\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\_base_client.py", line 919, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\JACKSON\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\_base_client.py", line 1023, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.NotFoundError: Error code: 404 - {'error': {'message': 'No endpoints found that support tool use. To learn more about provider routing, visit: https://openrouter.ai/docs/provider-routing', 'code': 404}}
+2025-04-08 16:36:23,406 - INFO - 服务器连接测试成功: http://localhost:5000
+2025-04-08 16:36:33,650 - INFO - 发送指令到LLM进行解析: 'hello'
+2025-04-08 16:36:33,811 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-04-08 16:36:33,811 - ERROR - 解析指令时出现异常: Error code: 404 - {'error': {'message': 'No endpoints found that support tool use. To learn more about provider routing, visit: https://openrouter.ai/docs/provider-routing', 'code': 404}}
+Traceback (most recent call last):
+  File "C:\Users\JACKSON\Desktop\YOLO\agent_training_mcp_browser\main.py", line 128, in parse_instruction_with_llm
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JACKSON\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\_utils\_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JACKSON\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\resources\chat\completions\completions.py", line 914, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\JACKSON\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JACKSON\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\_base_client.py", line 919, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\JACKSON\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\_base_client.py", line 1023, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.NotFoundError: Error code: 404 - {'error': {'message': 'No endpoints found that support tool use. To learn more about provider routing, visit: https://openrouter.ai/docs/provider-routing', 'code': 404}}
+2025-04-08 16:45:13,219 - INFO - 程序被用户中断(KeyboardInterrupt)
+2025-04-08 16:45:18,668 - INFO - 服务器连接测试成功: http://localhost:5000
+2025-04-08 16:45:22,727 - INFO - 发送指令到LLM进行解析: 'hello'
+2025-04-08 16:45:23,249 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-04-08 16:45:23,249 - ERROR - 解析指令时出现异常: Error code: 400 - {'error': {'message': 'openrouter/anthropic/claude-3-haiku-20240307 is not a valid model ID', 'code': 400}, 'user_id': 'user_2vB2APXlOBAVkXSOzJkERdBW4i5'}
+Traceback (most recent call last):
+  File "C:\Users\JACKSON\Desktop\YOLO\agent_training_mcp_browser\main.py", line 128, in parse_instruction_with_llm
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JACKSON\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\_utils\_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JACKSON\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\resources\chat\completions\completions.py", line 914, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\JACKSON\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JACKSON\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\_base_client.py", line 919, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\JACKSON\AppData\Local\Programs\Python\Python311\Lib\site-packages\openai\_base_client.py", line 1023, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': 'openrouter/anthropic/claude-3-haiku-20240307 is not a valid model ID', 'code': 400}, 'user_id': 'user_2vB2APXlOBAVkXSOzJkERdBW4i5'}
+2025-04-08 19:12:36,029 - ERROR - 服务器连接测试失败: HTTPConnectionPool(host='localhost', port=5000): Read timed out. (read timeout=5)
+2025-04-08 20:14:14,897 - INFO - 程序被用户中断(KeyboardInterrupt)
+2025-04-08 20:14:19,352 - INFO - 服务器连接测试成功: http://localhost:5000
+2025-04-08 20:14:38,941 - INFO - 发送指令到LLM进行解析: '打开浏览器访问CVAT'
+2025-04-08 20:14:38,944 - INFO - 使用第三方API解析指令: http://195.179.229.119/gpt/api.php
+2025-04-08 20:14:40,310 - INFO - API原始响应: {"content": "{\"operation\": \"browser\", \"params\": {\"action\": \"open_cvat\"}}", "words": 6}...
+2025-04-08 20:14:40,310 - INFO - LLM返回内容: {"operation": "browser", "params": {"action": "open_cvat"}}
+2025-04-08 20:14:50,624 - INFO - 准备向服务器 http://localhost:5000/browser 发送浏览器控制请求: {'action': 'open_cvat'}
+2025-04-08 20:14:50,624 - INFO - 发送请求 (尝试 1/3)...
+2025-04-08 20:14:59,853 - INFO - 请求成功，服务器返回结果
+2025-04-08 20:20:19,655 - INFO - 程序被用户中断(KeyboardInterrupt)
+2025-04-08 20:20:23,769 - INFO - 服务器连接测试成功: http://localhost:5000
+2025-04-08 20:20:42,070 - INFO - 发送指令到LLM进行解析: '打开浏览器'
+2025-04-08 20:20:42,071 - INFO - 使用第三方API解析指令: http://195.179.229.119/gpt/api.php
+2025-04-08 20:20:43,785 - INFO - API原始响应: {"content": "{\"operation\": \"browser\", \"params\": {\"action\": \"open_browser\"}}", "words": 6}...
+2025-04-08 20:20:43,787 - INFO - LLM返回内容: {"operation": "browser", "params": {"action": "open_browser"}}
+2025-04-08 20:20:48,784 - INFO - 准备向服务器 http://localhost:5000/browser 发送浏览器控制请求: {'action': 'open_browser'}
+2025-04-08 20:20:48,786 - INFO - 发送请求 (尝试 1/3)...
+2025-04-08 20:20:50,834 - INFO - 请求成功，服务器返回结果
+2025-04-08 20:21:57,559 - INFO - 发送指令到LLM进行解析: '打开浏览器访问CVAT'
+2025-04-08 20:21:57,560 - INFO - 使用第三方API解析指令: http://195.179.229.119/gpt/api.php
+2025-04-08 20:21:59,406 - INFO - API原始响应: {"content": "{\"operation\": \"browser\", \"params\": {\"action\": \"open_cvat\"}}", "words": 6}...
+2025-04-08 20:21:59,406 - INFO - LLM返回内容: {"operation": "browser", "params": {"action": "open_cvat"}}
+2025-04-08 20:22:02,701 - INFO - 准备向服务器 http://localhost:5000/browser 发送浏览器控制请求: {'action': 'open_cvat'}
+2025-04-08 20:22:02,701 - INFO - 发送请求 (尝试 1/3)...
+2025-04-08 20:22:34,748 - WARNING - 请求超时，将在5秒后重试...
+2025-04-08 20:22:39,749 - INFO - 发送请求 (尝试 2/3)...
+2025-04-08 20:28:37,748 - INFO - 服务器连接测试成功: http://localhost:5000
+2025-04-08 20:28:54,550 - INFO - 发送指令到LLM进行解析: '打开浏览器，并进入 cvat'
+2025-04-08 20:28:54,550 - INFO - 使用第三方API解析指令: http://195.179.229.119/gpt/api.php
+2025-04-08 20:28:55,834 - INFO - API原始响应: {"content": "{\"operation\": \"browser\", \"params\": {\"action\": \"open_cvat\"}}", "words": 6}...
+2025-04-08 20:28:55,834 - INFO - LLM返回内容: {"operation": "browser", "params": {"action": "open_cvat"}}
+2025-04-08 20:29:01,841 - INFO - 准备向服务器 http://localhost:5000/browser 发送浏览器控制请求: {'action': 'open_cvat'}
+2025-04-08 20:29:01,841 - INFO - 发送请求 (尝试 1/3)...
+2025-04-08 20:29:10,772 - INFO - 请求成功，服务器返回结果
+2025-04-08 20:30:10,576 - INFO - 程序被用户中断(KeyboardInterrupt)
+2025-04-08 20:30:16,292 - INFO - 服务器连接测试成功: http://localhost:5000
+2025-04-08 20:30:20,146 - INFO - 发送指令到LLM进行解析: '打开浏览器，并进入 cvat'
+2025-04-08 20:30:20,146 - INFO - 使用第三方API解析指令: http://195.179.229.119/gpt/api.php
+2025-04-08 20:30:21,506 - INFO - API原始响应: {"content": "{\"operation\": \"browser\", \"params\": {\"action\": \"open_cvat\"}}", "words": 6}...
+2025-04-08 20:30:21,506 - INFO - LLM返回内容: {"operation": "browser", "params": {"action": "open_cvat"}}
+2025-04-08 20:30:23,201 - INFO - 准备向服务器 http://localhost:5000/browser 发送浏览器控制请求: {'action': 'open_cvat'}
+2025-04-08 20:30:23,201 - INFO - 发送请求 (尝试 1/3)...
+2025-04-08 20:30:32,095 - INFO - 请求成功，服务器返回结果
+2025-04-08 20:32:48,705 - INFO - 程序被用户中断(KeyboardInterrupt)
+2025-04-08 20:32:53,078 - INFO - 服务器连接测试成功: http://localhost:5000
+2025-04-08 20:32:56,871 - INFO - 发送指令到LLM进行解析: '打开浏览器，并进入 cvat'
+2025-04-08 20:32:56,871 - INFO - 使用第三方API解析指令: http://195.179.229.119/gpt/api.php
+2025-04-08 20:32:58,810 - INFO - API原始响应: {"content": "{\"operation\": \"browser\", \"params\": {\"action\": \"open_cvat\"}}", "words": 6}...
+2025-04-08 20:32:58,810 - INFO - LLM返回内容: {"operation": "browser", "params": {"action": "open_cvat"}}
+2025-04-08 20:33:01,943 - INFO - 准备向服务器 http://localhost:5000/browser 发送浏览器控制请求: {'action': 'open_cvat'}
+2025-04-08 20:33:01,943 - INFO - 发送请求 (尝试 1/3)...
+2025-04-08 20:33:25,914 - INFO - 请求成功，服务器返回结果
+2025-04-08 20:37:25,729 - INFO - 程序被用户中断(KeyboardInterrupt)
+2025-04-08 20:37:36,138 - INFO - 服务器连接测试成功: http://localhost:5000
+2025-04-08 20:37:42,535 - INFO - 发送指令到LLM进行解析: '打开浏览器，并进入 cvat'
+2025-04-08 20:37:42,535 - INFO - 使用第三方API解析指令: http://195.179.229.119/gpt/api.php
+2025-04-08 20:37:43,677 - INFO - API原始响应: {"content": "{\"operation\": \"browser\", \"params\": {\"action\": \"open_cvat\"}}", "words": 6}...
+2025-04-08 20:37:43,677 - INFO - LLM返回内容: {"operation": "browser", "params": {"action": "open_cvat"}}
+2025-04-08 20:37:46,490 - INFO - 准备向服务器 http://localhost:5000/browser 发送浏览器控制请求: {'action': 'open_cvat'}
+2025-04-08 20:37:46,505 - INFO - 发送请求 (尝试 1/3)...
+2025-04-08 20:38:10,474 - INFO - 请求成功，服务器返回结果
+2025-04-08 20:42:17,609 - INFO - 程序被用户中断(KeyboardInterrupt)
+2025-04-08 20:42:28,727 - INFO - 服务器连接测试成功: http://localhost:5000
+2025-04-08 20:42:33,256 - INFO - 发送指令到LLM进行解析: '打开浏览器，并进入 cvat'
+2025-04-08 20:42:33,257 - INFO - 使用第三方API解析指令: http://195.179.229.119/gpt/api.php
+2025-04-08 20:42:34,992 - INFO - API原始响应: {"content": "```json{\"operation\": \"browser\", \"params\": {\"action\": \"open_cvat\"}}```", "words": 7}...
+2025-04-08 20:42:34,992 - INFO - LLM返回内容: ```json{"operation": "browser", "params": {"action": "open_cvat"}}```
+2025-04-08 20:42:34,992 - WARNING - 无法解析返回内容为JSON
+2025-04-08 20:42:46,401 - INFO - 准备向服务器 http://localhost:5000/browser 发送浏览器控制请求: {'action': 'open_cvat'}
+2025-04-08 20:42:46,401 - INFO - 发送请求 (尝试 1/3)...
+2025-04-08 20:42:55,789 - INFO - 请求成功，服务器返回结果
+2025-04-08 20:45:38,019 - INFO - 程序被用户中断(KeyboardInterrupt)
+2025-04-08 20:45:42,589 - INFO - 服务器连接测试成功: http://localhost:5000
+2025-04-08 20:46:02,950 - INFO - 准备向服务器 http://localhost:5000/browser 发送浏览器控制请求: {'action': 'login_cvat', 'username': 'admin', 'password': 'admin'}
+2025-04-08 20:46:02,950 - INFO - 发送请求 (尝试 1/3)...
+2025-04-08 20:46:51,349 - INFO - 服务器连接测试成功: http://localhost:5000
+2025-04-08 20:47:20,250 - INFO - 准备向服务器 http://localhost:5000/browser 发送浏览器控制请求: {'action': 'create_project', 'name': 'ccc'}
+2025-04-08 20:47:20,250 - INFO - 发送请求 (尝试 1/3)...
+2025-04-08 20:47:52,332 - WARNING - 请求超时，将在5秒后重试...
+2025-04-08 20:47:57,333 - INFO - 发送请求 (尝试 2/3)...
+2025-04-08 20:48:29,415 - WARNING - 请求超时，将在5秒后重试...
+2025-04-08 20:48:34,417 - INFO - 发送请求 (尝试 3/3)...
+2025-04-09 09:27:07,094 - INFO - 服务器连接测试成功: http://localhost:5000
+2025-04-09 09:27:23,824 - INFO - 发送指令到LLM进行解析: '打开浏览器访问CVAT'
+2025-04-09 09:27:23,824 - INFO - 使用第三方API解析指令: http://195.179.229.119/gpt/api.php
+2025-04-09 09:27:25,352 - INFO - API原始响应: {"content": "```json{\"operation\": \"browser\", \"params\": {\"action\": \"open_cvat\"}}```", "words": 7}...
+2025-04-09 09:27:25,352 - INFO - LLM返回内容: ```json{"operation": "browser", "params": {"action": "open_cvat"}}```
+2025-04-09 09:27:25,370 - WARNING - 无法解析返回内容为JSON
+2025-04-09 09:27:52,502 - INFO - 准备向服务器 http://localhost:5000/browser 发送浏览器控制请求: {'action': 'open_cvat'}
+2025-04-09 09:27:52,502 - INFO - 发送请求 (尝试 1/3)...
+2025-04-09 09:28:00,370 - INFO - 请求成功，服务器返回结果
+2025-04-09 09:34:55,626 - INFO - 程序被用户中断(KeyboardInterrupt)
+2025-04-09 09:35:03,394 - INFO - 服务器连接测试成功: http://localhost:5000
+2025-04-09 09:35:11,502 - INFO - 发送指令到LLM进行解析: '打开浏览器访问CVAT'
+2025-04-09 09:35:11,502 - INFO - 使用第三方API解析指令: http://195.179.229.119/gpt/api.php
+2025-04-09 09:35:12,941 - INFO - API原始响应: {"content": "```json{\"operation\": \"browser\", \"params\": {\"action\": \"open_cvat\"}}```", "words": 7}...
+2025-04-09 09:35:12,941 - INFO - LLM返回内容: ```json{"operation": "browser", "params": {"action": "open_cvat"}}```
+2025-04-09 09:35:12,941 - WARNING - 无法解析返回内容为JSON
+2025-04-09 09:35:27,956 - INFO - 准备向服务器 http://localhost:5000/browser 发送浏览器控制请求: {'action': 'open_cvat'}
+2025-04-09 09:35:27,956 - INFO - 发送请求 (尝试 1/3)...
+2025-04-09 09:36:00,028 - WARNING - 请求超时，将在5秒后重试...
+2025-04-09 09:36:05,029 - INFO - 发送请求 (尝试 2/3)...
+2025-04-09 09:36:37,064 - INFO - 程序被用户中断(KeyboardInterrupt)
+2025-04-09 09:36:42,744 - INFO - 服务器连接测试成功: http://localhost:5000
+2025-04-09 09:36:52,724 - INFO - 发送指令到LLM进行解析: '打开浏览器访问CVAT'
+2025-04-09 09:36:52,724 - INFO - 使用第三方API解析指令: http://195.179.229.119/gpt/api.php
+2025-04-09 09:36:54,052 - INFO - API原始响应: {"content": "```json{\"operation\": \"browser\", \"params\": {\"action\": \"open_cvat\"}}```", "words": 7}...
+2025-04-09 09:36:54,052 - INFO - LLM返回内容: ```json{"operation": "browser", "params": {"action": "open_cvat"}}```
+2025-04-09 09:36:54,052 - WARNING - 无法解析返回内容为JSON
+2025-04-09 09:37:01,051 - INFO - 准备向服务器 http://localhost:5000/browser 发送浏览器控制请求: {'action': 'open_cvat'}
+2025-04-09 09:37:01,053 - INFO - 发送请求 (尝试 1/3)...
+2025-04-09 09:37:33,127 - WARNING - 请求超时，将在5秒后重试...
+2025-04-09 09:37:56,997 - INFO - 服务器连接测试成功: http://localhost:5000
+2025-04-09 09:38:22,820 - INFO - 发送指令到LLM进行解析: '打开浏览器并导航到CVAT网站'
+2025-04-09 09:38:22,820 - INFO - 使用第三方API解析指令: http://195.179.229.119/gpt/api.php
+2025-04-09 09:38:24,290 - INFO - API原始响应: {"content": "{\"operation\": \"browser\", \"params\": {\"action\": \"open_cvat\"}}", "words": 6}...
+2025-04-09 09:38:24,291 - INFO - LLM返回内容: {"operation": "browser", "params": {"action": "open_cvat"}}
+2025-04-09 09:38:28,422 - INFO - 准备向服务器 http://localhost:5000/browser 发送浏览器控制请求: {'action': 'open_cvat'}
+2025-04-09 09:38:28,422 - INFO - 发送请求 (尝试 1/3)...
+2025-04-09 09:38:30,989 - INFO - 请求成功，服务器返回结果
+2025-04-09 09:40:03,863 - INFO - 程序被用户中断(KeyboardInterrupt)
+2025-04-09 09:40:09,159 - INFO - 服务器连接测试成功: http://localhost:5000
+2025-04-09 09:40:12,817 - INFO - 发送指令到LLM进行解析: '打开浏览器并导航到CVAT网站'
+2025-04-09 09:40:12,817 - INFO - 使用第三方API解析指令: http://195.179.229.119/gpt/api.php
+2025-04-09 09:40:14,638 - INFO - API原始响应: {"content": "```json{\"operation\": \"browser\", \"params\": {\"action\": \"open_cvat\"}}```", "words": 7}...
+2025-04-09 09:40:14,638 - INFO - LLM返回内容: ```json{"operation": "browser", "params": {"action": "open_cvat"}}```
+2025-04-09 09:40:14,639 - WARNING - 无法解析返回内容为JSON
+2025-04-09 09:40:16,849 - INFO - 准备向服务器 http://localhost:5000/browser 发送浏览器控制请求: {'action': 'open_cvat'}
+2025-04-09 09:40:16,849 - INFO - 发送请求 (尝试 1/3)...
+2025-04-09 09:40:48,912 - WARNING - 请求超时，将在5秒后重试...
+2025-04-09 09:40:50,092 - INFO - 程序被用户中断(KeyboardInterrupt)
+2025-04-09 09:40:55,032 - INFO - 服务器连接测试成功: http://localhost:5000
+2025-04-09 09:40:59,552 - INFO - 程序被用户中断(KeyboardInterrupt)
+2025-04-09 09:41:17,696 - INFO - 服务器连接测试成功: http://localhost:5000
+2025-04-09 09:41:23,492 - INFO - 发送指令到LLM进行解析: '打开浏览器并导航到CVAT网站'
+2025-04-09 09:41:23,492 - INFO - 使用第三方API解析指令: http://195.179.229.119/gpt/api.php
+2025-04-09 09:41:24,796 - INFO - API原始响应: {"content": "```json{\"operation\": \"browser\", \"params\": {\"action\": \"open_cvat\"}}```", "words": 7}...
+2025-04-09 09:41:24,796 - INFO - LLM返回内容: ```json{"operation": "browser", "params": {"action": "open_cvat"}}```
+2025-04-09 09:41:24,798 - WARNING - 无法解析返回内容为JSON
+2025-04-09 09:41:26,529 - INFO - 准备向服务器 http://localhost:5000/browser 发送浏览器控制请求: {'action': 'open_cvat'}
+2025-04-09 09:41:26,529 - INFO - 发送请求 (尝试 1/3)...
+2025-04-09 09:41:30,471 - INFO - 请求成功，服务器返回结果
+2025-04-09 09:44:04,345 - INFO - 准备向服务器 http://localhost:5000/browser 发送浏览器控制请求: {'action': 'open_cvat'}
+2025-04-09 09:44:04,345 - INFO - 发送请求 (尝试 1/3)...
+2025-04-09 09:44:36,401 - WARNING - 请求超时，将在5秒后重试...
+2025-04-09 09:44:41,405 - INFO - 发送请求 (尝试 2/3)...
+2025-04-09 09:45:13,455 - WARNING - 请求超时，将在5秒后重试...
+2025-04-09 09:45:18,456 - INFO - 发送请求 (尝试 3/3)...
+2025-04-09 09:45:50,509 - ERROR - 请求超时，已达到最大重试次数
+2025-04-09 09:52:31,125 - INFO - 程序被用户中断(KeyboardInterrupt)
+2025-04-09 09:52:35,501 - INFO - 服务器连接测试成功: http://localhost:5000
+2025-04-09 09:52:40,130 - INFO - 发送指令到LLM进行解析: '打开浏览器并导航到CVAT网站'
+2025-04-09 09:52:40,130 - INFO - 使用第三方API解析指令: http://195.179.229.119/gpt/api.php
+2025-04-09 09:52:41,721 - INFO - API原始响应: {"content": "```json{\"operation\": \"browser\", \"params\": {\"action\": \"open_cvat\"}}```", "words": 7}...
+2025-04-09 09:52:41,722 - INFO - LLM返回内容: ```json{"operation": "browser", "params": {"action": "open_cvat"}}```
+2025-04-09 09:52:41,726 - WARNING - 无法解析返回内容为JSON
+2025-04-09 09:52:47,693 - INFO - 准备向服务器 http://localhost:5000/browser 发送浏览器控制请求: {'action': 'open_cvat'}
+2025-04-09 09:52:47,693 - INFO - 发送请求 (尝试 1/3)...
+2025-04-09 10:05:14,988 - INFO - 服务器连接测试成功: http://localhost:5000
+2025-04-09 10:05:29,412 - INFO - 发送指令到LLM进行解析: '打开浏览器访问CVAT'
+2025-04-09 10:05:29,412 - INFO - 使用第三方API解析指令: http://195.179.229.119/gpt/api.php
+2025-04-09 10:05:30,607 - INFO - API原始响应: {"content": "{\"operation\": \"browser\", \"params\": {\"action\": \"open_cvat\"}}", "words": 6}...
+2025-04-09 10:05:30,607 - INFO - LLM返回内容: {"operation": "browser", "params": {"action": "open_cvat"}}
+2025-04-09 10:05:32,803 - INFO - 准备向服务器 http://localhost:5000/browser 发送浏览器控制请求: {'action': 'open_cvat'}
+2025-04-09 10:05:32,804 - INFO - 发送请求 (尝试 1/3)...
+2025-04-09 10:05:46,832 - INFO - 请求成功，服务器返回结果
+2025-04-09 10:10:59,076 - INFO - 程序被用户中断(KeyboardInterrupt)
+2025-04-09 10:11:04,638 - INFO - 服务器连接测试成功: http://localhost:5000
+2025-04-09 10:11:13,640 - INFO - 发送指令到LLM进行解析: '打开浏览器访问CVAT'
+2025-04-09 10:11:13,640 - INFO - 使用第三方API解析指令: http://195.179.229.119/gpt/api.php
+2025-04-09 10:11:15,384 - INFO - API原始响应: {"content": "```json{\"operation\": \"browser\", \"params\": {\"action\": \"open_cvat\"}}```", "words": 7}...
+2025-04-09 10:11:15,384 - INFO - LLM返回内容: ```json{"operation": "browser", "params": {"action": "open_cvat"}}```
+2025-04-09 10:11:15,384 - WARNING - 无法解析返回内容为JSON
+2025-04-09 10:11:19,902 - INFO - 准备向服务器 http://localhost:5000/browser 发送浏览器控制请求: {'action': 'open_cvat', 'browser_type': 'msedge'}
+2025-04-09 10:11:19,902 - INFO - 发送请求 (尝试 1/3)...
+2025-04-09 10:11:34,417 - INFO - 请求成功，服务器返回结果
+2025-04-09 10:14:49,794 - INFO - 程序被用户中断(KeyboardInterrupt)
+2025-04-09 10:14:56,332 - INFO - 服务器连接测试成功: http://localhost:5000
+2025-04-09 10:15:00,859 - INFO - 发送指令到LLM进行解析: '打开浏览器访问CVAT'
+2025-04-09 10:15:00,859 - INFO - 使用第三方API解析指令: http://195.179.229.119/gpt/api.php
+2025-04-09 10:15:06,842 - INFO - API原始响应: {"content": "{\"operation\": \"browser\", \"params\": {\"action\": \"open_cvat\"}}", "words": 6}...
+2025-04-09 10:15:06,842 - INFO - LLM返回内容: {"operation": "browser", "params": {"action": "open_cvat"}}
+2025-04-09 10:15:09,677 - INFO - 准备向服务器 http://localhost:5000/browser 发送浏览器控制请求: {'action': 'open_cvat', 'browser_type': 'msedge'}
+2025-04-09 10:15:09,677 - INFO - 发送请求 (尝试 1/3)...
+2025-04-09 10:15:41,739 - WARNING - 请求超时，将在5秒后重试...
+2025-04-09 10:15:46,742 - INFO - 发送请求 (尝试 2/3)...
+2025-04-09 10:16:18,831 - WARNING - 请求超时，将在5秒后重试...
+2025-04-09 10:16:23,832 - INFO - 发送请求 (尝试 3/3)...
+2025-04-09 10:16:55,912 - INFO - 程序被用户中断(KeyboardInterrupt)
+2025-04-09 10:18:51,642 - INFO - 服务器连接测试成功: http://localhost:5000
+2025-04-09 10:18:56,098 - INFO - 发送指令到LLM进行解析: '打开浏览器访问CVAT'
+2025-04-09 10:18:56,098 - INFO - 使用第三方API解析指令: http://195.179.229.119/gpt/api.php
+2025-04-09 10:18:57,575 - INFO - API原始响应: {"content": "```json{\"operation\": \"browser\", \"params\": {\"action\": \"open_cvat\"}}```", "words": 7}...
+2025-04-09 10:18:57,576 - INFO - LLM返回内容: ```json{"operation": "browser", "params": {"action": "open_cvat"}}```
+2025-04-09 10:18:57,579 - WARNING - 无法解析返回内容为JSON
+2025-04-09 10:18:59,628 - INFO - 准备向服务器 http://localhost:5000/browser 发送浏览器控制请求: {'action': 'open_cvat', 'browser_type': 'msedge'}
+2025-04-09 10:18:59,628 - INFO - 发送请求 (尝试 1/3)...
+2025-04-09 10:19:15,045 - INFO - 请求成功，服务器返回结果
+2025-04-09 10:25:18,883 - INFO - 程序被用户中断(KeyboardInterrupt)
+2025-04-09 10:25:23,628 - INFO - 服务器连接测试成功: http://localhost:5000
+2025-04-09 10:25:27,210 - INFO - 发送指令到LLM进行解析: '打开浏览器访问CVAT'
+2025-04-09 10:25:27,212 - INFO - 使用第三方API解析指令: http://195.179.229.119/gpt/api.php
+2025-04-09 10:25:28,678 - INFO - API原始响应: {"content": "{\"operation\": \"browser\", \"params\": {\"action\": \"open_cvat\"}}", "words": 6}...
+2025-04-09 10:25:28,678 - INFO - LLM返回内容: {"operation": "browser", "params": {"action": "open_cvat"}}
+2025-04-09 10:25:31,902 - INFO - 准备向服务器 http://localhost:5000/browser 发送浏览器控制请求: {'action': 'open_cvat', 'browser_type': 'msedge'}
+2025-04-09 10:25:31,902 - INFO - 发送请求 (尝试 1/3)...
+2025-04-09 10:25:46,652 - INFO - 请求成功，服务器返回结果
+2025-04-09 10:28:28,378 - INFO - 程序被用户中断(KeyboardInterrupt)
+2025-04-09 10:28:35,677 - INFO - 服务器连接测试成功: http://localhost:5000
+2025-04-09 10:28:40,724 - INFO - 发送指令到LLM进行解析: '打开浏览器访问CVAT'
+2025-04-09 10:28:40,724 - INFO - 使用第三方API解析指令: http://195.179.229.119/gpt/api.php
+2025-04-09 10:28:42,399 - INFO - API原始响应: {"content": "```json{\"operation\": \"browser\", \"params\": {\"action\": \"open_cvat\"}}```", "words": 7}...
+2025-04-09 10:28:42,399 - INFO - LLM返回内容: ```json{"operation": "browser", "params": {"action": "open_cvat"}}```
+2025-04-09 10:28:42,413 - WARNING - 无法解析返回内容为JSON
+2025-04-09 10:28:44,844 - INFO - 准备向服务器 http://localhost:5000/browser 发送浏览器控制请求: {'action': 'open_cvat', 'browser_type': 'msedge'}
+2025-04-09 10:28:44,844 - INFO - 发送请求 (尝试 1/3)...
+2025-04-09 10:29:02,024 - INFO - 请求成功，服务器返回结果
+2025-04-09 10:33:54,842 - INFO - 程序被用户中断(KeyboardInterrupt)
+2025-04-09 10:33:59,562 - INFO - 服务器连接测试成功: http://localhost:5000
+2025-04-09 10:34:02,724 - INFO - 发送指令到LLM进行解析: '打开浏览器访问CVAT'
+2025-04-09 10:34:02,725 - INFO - 使用第三方API解析指令: http://195.179.229.119/gpt/api.php
+2025-04-09 10:34:04,115 - INFO - API原始响应: {"content": "```json{\"operation\": \"browser\", \"params\": {\"action\": \"open_cvat\"}}```", "words": 7}...
+2025-04-09 10:34:04,115 - INFO - LLM返回内容: ```json{"operation": "browser", "params": {"action": "open_cvat"}}```
+2025-04-09 10:34:04,131 - WARNING - 无法解析返回内容为JSON
+2025-04-09 10:34:04,131 - ERROR - 程序意外终止
+Traceback (most recent call last):
+  File "C:\Users\JACKSON\Desktop\YOLO\agent_training_mcp_browser\main.py", line 599, in <module>
+    main()
+  File "C:\Users\JACKSON\Desktop\YOLO\agent_training_mcp_browser\main.py", line 517, in main
+    process_browser_operation(parsed["params"])
+  File "C:\Users\JACKSON\Desktop\YOLO\agent_training_mcp_browser\main.py", line 422, in process_browser_operation
+    browser_type = request_data.get("browser_type", "chromium")  # 默认使用Chrome
+                   ^^^^^^^^^^^^
+NameError: name 'request_data' is not defined
+2025-04-09 10:36:04,180 - INFO - 服务器连接测试成功: http://localhost:5000
+2025-04-09 10:36:07,017 - INFO - 发送指令到LLM进行解析: '打开浏览器访问CVAT'
+2025-04-09 10:36:07,017 - INFO - 使用第三方API解析指令: http://195.179.229.119/gpt/api.php
+2025-04-09 10:36:08,313 - INFO - API原始响应: {"content": "{\"operation\": \"browser\", \"params\": {\"action\": \"open_cvat\"}}", "words": 6}...
+2025-04-09 10:36:08,313 - INFO - LLM返回内容: {"operation": "browser", "params": {"action": "open_cvat"}}
+2025-04-09 10:36:12,279 - INFO - 准备向服务器 http://localhost:5000/browser 发送浏览器控制请求: {'action': 'open_cvat', 'browser_type': 'chromium'}
+2025-04-09 10:36:12,279 - INFO - 发送请求 (尝试 1/3)...
+2025-04-09 10:36:27,838 - INFO - 请求成功，服务器返回结果
+2025-04-09 10:38:17,239 - INFO - 程序被用户中断(KeyboardInterrupt)
+2025-04-09 10:38:27,510 - INFO - 服务器连接测试成功: http://localhost:5000
+2025-04-09 10:38:33,237 - INFO - 发送指令到LLM进行解析: '打开浏览器访问CVAT'
+2025-04-09 10:38:33,237 - INFO - 使用第三方API解析指令: http://195.179.229.119/gpt/api.php
+2025-04-09 10:38:34,780 - INFO - API原始响应: {"content": "{\"operation\": \"browser\", \"params\": {\"action\": \"open_cvat\"}}", "words": 6}...
+2025-04-09 10:38:34,786 - INFO - LLM返回内容: {"operation": "browser", "params": {"action": "open_cvat"}}
+2025-04-09 10:38:36,245 - INFO - 准备向服务器 http://localhost:5000/browser 发送浏览器控制请求: {'action': 'open_cvat', 'browser_type': 'chromium'}
+2025-04-09 10:38:36,246 - INFO - 发送请求 (尝试 1/3)...
+2025-04-09 10:38:51,842 - INFO - 请求成功，服务器返回结果
