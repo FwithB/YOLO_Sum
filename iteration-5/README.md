@@ -1,3 +1,9 @@
+
+
+
+https://github.com/user-attachments/assets/1d1f4679-444b-4534-9892-c921494c7ce0
+
+
 # YOLO & CVAT Automation System - Iteration 5
 
 [English](README.md) | [中文](README_CN.md)
